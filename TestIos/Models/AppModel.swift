@@ -17,6 +17,7 @@ class AppModel: ObservableObject {
 //    @Published var groceryCategory: GroceryCategoryResponseDTO?
     @Published var acronyms: [Acronym] = []
     @Published var users: [User] = []
+    @Published var categories: [Category] = []
     
     let httpClient = HTTPClient()
     
@@ -32,15 +33,16 @@ class AppModel: ObservableObject {
           acronyms = try await httpClient.load(resource)
       }
     func populateUsers() async throws {
-  //
-  //        guard let userId = UserDefaults.standard.userId else {
-  //            return
-  //        }
-  //
         let resource = Resource(url: Constants.Urls.showUsers(), modelType: [User].self)
           print(resource.url.absoluteString)
   
           users = try await httpClient.load(resource)
+      }
+    func populateCategories() async throws {
+        let resource = Resource(url: Constants.Urls.showCategories(), modelType: [Category].self)
+          print(resource.url.absoluteString)
+  
+          categories = try await httpClient.load(resource)
       }
     
 //    func register(username: String, password: String) async throws -> RegisterResponseDTO {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Category: Codable {
+final class Category: Codable, Identifiable {
   var id: UUID?
   var name: String
 

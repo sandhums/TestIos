@@ -19,6 +19,9 @@ struct Constants {
         static func showAcronyms() -> URL {
             return URL(string: "\(baseUrlPath)/acronyms")!
         }
+        static func showUsers() -> URL {
+            return URL(string: "\(baseUrlPath)/users")!
+        }
         static func saveGroceryCategoryBy(userId: UUID) -> URL {
             return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories")!
         }

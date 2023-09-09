@@ -36,6 +36,7 @@ struct AcronymView: View {
                         }
                     }//.onDelete(perform: deleteGroceryCategory)
                 }
+        .navigationTitle("Acronyms")
         .task {
             await fetchAcronyms()
         }

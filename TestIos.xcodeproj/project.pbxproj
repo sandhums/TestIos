@@ -14,6 +14,21 @@
 		064763372AAC8C5800678530 /* TestIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763362AAC8C5800678530 /* TestIosTests.swift */; };
 		064763412AAC8C5800678530 /* TestIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763402AAC8C5800678530 /* TestIosUITests.swift */; };
 		064763432AAC8C5800678530 /* TestIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763422AAC8C5800678530 /* TestIosUITestsLaunchTests.swift */; };
+		064763512AAC8E1100678530 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763502AAC8E1100678530 /* User.swift */; };
+		064763532AAC8E3100678530 /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763522AAC8E3100678530 /* Acronym.swift */; };
+		064763552AAC8E3D00678530 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763542AAC8E3D00678530 /* Category.swift */; };
+		064763572AAC92B000678530 /* CreateAcronymData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763562AAC92B000678530 /* CreateAcronymData.swift */; };
+		0647635A2AAC92FC00678530 /* ResourceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763592AAC92FC00678530 /* ResourceRequest.swift */; };
+		0647635C2AAC935100678530 /* ResourceRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647635B2AAC935100678530 /* ResourceRequestError.swift */; };
+		0647635E2AAC943800678530 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647635D2AAC943800678530 /* ErrorWrapper.swift */; };
+		064763612AAC950800678530 /* AcronymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763602AAC950800678530 /* AcronymView.swift */; };
+		064763632AAC951E00678530 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763622AAC951E00678530 /* UserView.swift */; };
+		064763652AAC952A00678530 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763642AAC952A00678530 /* CategoryView.swift */; };
+		064763672AAC9AA400678530 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763662AAC9AA400678530 /* ErrorView.swift */; };
+		064763692AAC9F8200678530 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763682AAC9F8200678530 /* AppState.swift */; };
+		0647636B2AACA09D00678530 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647636A2AACA09D00678530 /* Constants.swift */; };
+		0647636D2AACA33400678530 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647636C2AACA33400678530 /* HTTPClient.swift */; };
+		0647636F2AACA43200678530 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647636E2AACA43200678530 /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +59,21 @@
 		0647633C2AAC8C5800678530 /* TestIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		064763402AAC8C5800678530 /* TestIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIosUITests.swift; sourceTree = "<group>"; };
 		064763422AAC8C5800678530 /* TestIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		064763502AAC8E1100678530 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		064763522AAC8E3100678530 /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
+		064763542AAC8E3D00678530 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		064763562AAC92B000678530 /* CreateAcronymData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAcronymData.swift; sourceTree = "<group>"; };
+		064763592AAC92FC00678530 /* ResourceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequest.swift; sourceTree = "<group>"; };
+		0647635B2AAC935100678530 /* ResourceRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequestError.swift; sourceTree = "<group>"; };
+		0647635D2AAC943800678530 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		064763602AAC950800678530 /* AcronymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymView.swift; sourceTree = "<group>"; };
+		064763622AAC951E00678530 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		064763642AAC952A00678530 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		064763662AAC9AA400678530 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		064763682AAC9F8200678530 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		0647636A2AACA09D00678530 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0647636C2AACA33400678530 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		0647636E2AACA43200678530 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +124,9 @@
 		064763242AAC8C5700678530 /* TestIos */ = {
 			isa = PBXGroup;
 			children = (
+				0647635F2AAC94F100678530 /* Views */,
+				064763582AAC92E300678530 /* Utilities */,
+				0647634F2AAC8DE400678530 /* Models */,
 				064763252AAC8C5700678530 /* TestIosApp.swift */,
 				064763272AAC8C5700678530 /* ContentView.swift */,
 				064763292AAC8C5800678530 /* Assets.xcassets */,
@@ -125,6 +158,42 @@
 				064763422AAC8C5800678530 /* TestIosUITestsLaunchTests.swift */,
 			);
 			path = TestIosUITests;
+			sourceTree = "<group>";
+		};
+		0647634F2AAC8DE400678530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				064763502AAC8E1100678530 /* User.swift */,
+				064763522AAC8E3100678530 /* Acronym.swift */,
+				064763542AAC8E3D00678530 /* Category.swift */,
+				064763562AAC92B000678530 /* CreateAcronymData.swift */,
+				0647636E2AACA43200678530 /* AppModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		064763582AAC92E300678530 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				064763592AAC92FC00678530 /* ResourceRequest.swift */,
+				0647635B2AAC935100678530 /* ResourceRequestError.swift */,
+				0647635D2AAC943800678530 /* ErrorWrapper.swift */,
+				064763682AAC9F8200678530 /* AppState.swift */,
+				0647636A2AACA09D00678530 /* Constants.swift */,
+				0647636C2AACA33400678530 /* HTTPClient.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0647635F2AAC94F100678530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				064763602AAC950800678530 /* AcronymView.swift */,
+				064763622AAC951E00678530 /* UserView.swift */,
+				064763642AAC952A00678530 /* CategoryView.swift */,
+				064763662AAC9AA400678530 /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +326,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064763632AAC951E00678530 /* UserView.swift in Sources */,
+				064763612AAC950800678530 /* AcronymView.swift in Sources */,
+				064763652AAC952A00678530 /* CategoryView.swift in Sources */,
+				0647635C2AAC935100678530 /* ResourceRequestError.swift in Sources */,
 				064763282AAC8C5700678530 /* ContentView.swift in Sources */,
+				0647636B2AACA09D00678530 /* Constants.swift in Sources */,
+				064763552AAC8E3D00678530 /* Category.swift in Sources */,
+				0647635E2AAC943800678530 /* ErrorWrapper.swift in Sources */,
+				064763532AAC8E3100678530 /* Acronym.swift in Sources */,
 				064763262AAC8C5700678530 /* TestIosApp.swift in Sources */,
+				0647636F2AACA43200678530 /* AppModel.swift in Sources */,
+				0647636D2AACA33400678530 /* HTTPClient.swift in Sources */,
+				064763692AAC9F8200678530 /* AppState.swift in Sources */,
+				0647635A2AAC92FC00678530 /* ResourceRequest.swift in Sources */,
+				064763512AAC8E1100678530 /* User.swift in Sources */,
+				064763672AAC9AA400678530 /* ErrorView.swift in Sources */,
+				064763572AAC92B000678530 /* CreateAcronymData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

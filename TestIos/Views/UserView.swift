@@ -11,6 +11,8 @@ struct UserView: View {
     @EnvironmentObject private var model: AppModel
     @EnvironmentObject private var appState: AppState
     
+    @State private var isPresented: Bool = false
+    
     private func fetchUsers() async {
         do {
             try await model.populateUsers()
@@ -19,28 +21,45 @@ struct UserView: View {
         }
     }
     var body: some View {
-        ZStack {
-            if model.users.isEmpty {
-                Text("No grocery categories found.")
-            } else {
-                List {
-                    ForEach(model.users) { user in
-//                        NavigationLink(value: Route.groceryCategoryDetail(groceryCategory)) {
-//                            HStack {
-//                                Circle()
-//                                    .fill(Color.fromHex(groceryCategory.colorCode))
-//                                    .frame(width: 25, height: 25)
-                        Text(user.name)
-                        Text(user.username)
-                            }
+        NavigationStack {
+            ZStack {
+                if model.users.isEmpty {
+                    Text("No grocery categories found.")
+                } else {
+                    List {
+                        ForEach(model.users) { user in
+                            //                        NavigationLink(value: Route.groceryCategoryDetail(groceryCategory)) {
+                            //                            HStack {
+                            //                                Circle()
+                            //                                    .fill(Color.fromHex(groceryCategory.colorCode))
+                            //                                    .frame(width: 25, height: 25)
+                            Text(user.name)
+                            Text(user.username)
                         }
-                    }//.onDelete(perform: deleteGroceryCategory)
-                }
-        .navigationTitle("Users")
-        .task {
-            await fetchUsers()
-        }
+                    }
+                }//.onDelete(perform: deleteGroceryCategory)
             }
+            .navigationTitle("Users")
+            .task {
+                await fetchUsers()
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        // action
+                        isPresented = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }.sheet(isPresented: $isPresented) {
+                NavigationStack {
+                    AddNewUserView()
+                }
+        }
+       
+        }
+    }
         }
 struct UserViewContainer: View {
     

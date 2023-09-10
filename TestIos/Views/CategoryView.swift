@@ -19,27 +19,30 @@ struct CategoryView: View {
         }
     }
     var body: some View {
-        ZStack {
-            if model.categories.isEmpty {
-                Text("No grocery categories found.")
-            } else {
-                List {
-                    ForEach(model.categories) { category in
-//                        NavigationLink(value: Route.groceryCategoryDetail(groceryCategory)) {
-//                            HStack {
-//                                Circle()
-//                                    .fill(Color.fromHex(groceryCategory.colorCode))
-//                                    .frame(width: 25, height: 25)
-                        Text(category.name)
-                        
-                            }
+        NavigationStack {
+            ZStack {
+                if model.categories.isEmpty {
+                    Text("No grocery categories found.")
+                } else {
+                    List {
+                        ForEach(model.categories) { category in
+                            //                        NavigationLink(value: Route.groceryCategoryDetail(groceryCategory)) {
+                            //                            HStack {
+                            //                                Circle()
+                            //                                    .fill(Color.fromHex(groceryCategory.colorCode))
+                            //                                    .frame(width: 25, height: 25)
+                            Text(category.name)
+                            
                         }
-                    }//.onDelete(perform: deleteGroceryCategory)
-                }
-        .navigationTitle("Categories")
-        .task {
-            await fetchCategories()
+                    }
+                }//.onDelete(perform: deleteGroceryCategory)
+            }
+            .navigationTitle("Categories")
+            .task {
+                await fetchCategories()
+            }
         }
+       
             }
         }
 struct CategoryViewContainer: View {

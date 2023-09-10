@@ -18,6 +18,7 @@ class AppModel: ObservableObject {
     @Published var acronyms: [Acronym] = []
     @Published var users: [User] = []
     @Published var categories: [Category] = []
+//    @Published var user: User
     
     let httpClient = HTTPClient()
     
@@ -45,13 +46,14 @@ class AppModel: ObservableObject {
           categories = try await httpClient.load(resource)
       }
     
-//    func register(username: String, password: String) async throws -> RegisterResponseDTO {
-//
-//        let registerData = ["username": username, "password": password]
-//        let resource = try Resource(url: Constants.Urls.register, method: .post(JSONEncoder().encode(registerData)), modelType: RegisterResponseDTO.self)
-//        let registerResponseDTO = try await httpClient.load(resource)
-//        return registerResponseDTO
-//    }
+    func createUser(name: String, username: String) async throws  {
+      
+        let registerData = ["name": name, "username": username]
+        let resource = try Resource(url: Constants.Urls.showUsers(), method: .post(JSONEncoder().encode(registerData)), modelType: User.self)
+        let newUser = try await httpClient.load(resource)
+        users.append(newUser)
+      
+    }
 //
 //    func logout() {
 //        let defaults = UserDefaults.standard

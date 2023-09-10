@@ -19,27 +19,30 @@ struct AcronymView: View {
         }
     }
     var body: some View {
-        ZStack {
-            if model.acronyms.isEmpty {
-                Text("No grocery categories found.")
-            } else {
-                List {
-                    ForEach(model.acronyms) { acronym in
-//                        NavigationLink(value: Route.groceryCategoryDetail(groceryCategory)) {
-//                            HStack {
-//                                Circle()
-//                                    .fill(Color.fromHex(groceryCategory.colorCode))
-//                                    .frame(width: 25, height: 25)
-                        Text(acronym.short)
-                        Text(acronym.long)
-                            }
+        NavigationStack {
+            ZStack {
+                if model.acronyms.isEmpty {
+                    Text("No grocery categories found.")
+                } else {
+                    List {
+                        ForEach(model.acronyms) { acronym in
+                            //                        NavigationLink(value: Route.groceryCategoryDetail(groceryCategory)) {
+                            //                            HStack {
+                            //                                Circle()
+                            //                                    .fill(Color.fromHex(groceryCategory.colorCode))
+                            //                                    .frame(width: 25, height: 25)
+                            Text(acronym.short)
+                            Text(acronym.long)
                         }
-                    }//.onDelete(perform: deleteGroceryCategory)
-                }
-        .navigationTitle("Acronyms")
-        .task {
-            await fetchAcronyms()
+                    }
+                }//.onDelete(perform: deleteGroceryCategory)
+            }
+            .navigationTitle("Acronyms")
+            .task {
+                await fetchAcronyms()
+            }
         }
+       
             }
         }
 struct AcronymViewContainer: View {

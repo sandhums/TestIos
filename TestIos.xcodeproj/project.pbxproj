@@ -29,6 +29,7 @@
 		0647636B2AACA09D00678530 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647636A2AACA09D00678530 /* Constants.swift */; };
 		0647636D2AACA33400678530 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647636C2AACA33400678530 /* HTTPClient.swift */; };
 		0647636F2AACA43200678530 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0647636E2AACA43200678530 /* AppModel.swift */; };
+		064763712AAD271F00678530 /* AddNewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064763702AAD271F00678530 /* AddNewUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		0647636A2AACA09D00678530 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0647636C2AACA33400678530 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		0647636E2AACA43200678530 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		064763702AAD271F00678530 /* AddNewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				064763622AAC951E00678530 /* UserView.swift */,
 				064763642AAC952A00678530 /* CategoryView.swift */,
 				064763662AAC9AA400678530 /* ErrorView.swift */,
+				064763702AAD271F00678530 /* AddNewUserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				0647635A2AAC92FC00678530 /* ResourceRequest.swift in Sources */,
 				064763512AAC8E1100678530 /* User.swift in Sources */,
 				064763672AAC9AA400678530 /* ErrorView.swift in Sources */,
+				064763712AAD271F00678530 /* AddNewUserView.swift in Sources */,
 				064763572AAC92B000678530 /* CreateAcronymData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
